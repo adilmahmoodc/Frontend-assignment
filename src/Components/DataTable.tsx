@@ -104,7 +104,7 @@ const DataTable: React.FC = () => {
       } else {
         dispatch(getUser());
       }
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(debounceTimeout);
   }, [debouncedSearchText, dispatch]);
@@ -157,11 +157,7 @@ const DataTable: React.FC = () => {
         scroll={{ x: "max-content" }}
       />
       {open && modalData && (
-        <UserDetailModel
-          open={open}
-          onClose={() => setOpen(false)}
-          modalData={modalData}
-        />
+        <UserDetailModel open={open} onClose={() => setOpen(false)} modalData={modalData} />
       )}
     </div>
   );
