@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Use ES6 for server-side code
+    "module": "CommonJS", // Use CommonJS modules for Node.js
+    "moduleResolution": "node", // Node.js style module resolution
+    "esModuleInterop": true, // Allow default imports for modules without default export
+    "strict": true, // Enable strict type-checking options
+    "skipLibCheck": true, // Skip checking declaration files
+    "noEmit": true // No JavaScript output for server-side code
+  },
+  "include": [
+    "src/server/**/*" // Only include server-side files
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules directory
+    "build", // Exclude build output directory
+    "dist" // Exclude distribution directory
+  ]
+}

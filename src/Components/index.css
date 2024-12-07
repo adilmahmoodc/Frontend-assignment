@@ -1,0 +1,30 @@
+.user-detail-modal-header {
+  padding: 1px;
+  border-radius: 8px 8px 0 0;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.user-detail-modal-body {
+  padding: 24px;
+  background: #f4f6f9;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.user-detail-divider {
+  border-top: 1px solid #d1d5db;
+  margin: 24px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

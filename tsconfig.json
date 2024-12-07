@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Modern JavaScript
+    "module": "ESNext", // Use ES modules
+    "moduleResolution": "node", // Ensure module resolution is consistent with Node.js
+    "jsx": "react-jsx", // Enable JSX with React 17+ JSX Transform
+    "esModuleInterop": true, // Allow default imports for modules with no default export
+    "strict": true, // Enable all strict type-checking options
+    "skipLibCheck": true, // Skip type checking for declaration files (helps with node_modules)
+    "allowJs": true, // Allow JavaScript files in the project
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file naming casing
+    "noEmit": true, // No code output (for type-checking only)
+    "types": ["jest", "@testing-library/jest-dom"]
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
