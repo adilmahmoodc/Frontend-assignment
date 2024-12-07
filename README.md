@@ -1,16 +1,16 @@
 ## Technology stack
 
-* [Typescript](https://www.typescriptlang.org/)
-* [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Ant Design](https://ant.design/)
-* [axios](https://github.com/axios/axios)
+- [Typescript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Ant Design](https://ant.design/)
+- [axios](https://github.com/axios/axios)
 
 Recommendations:
 
-* Please check `package.json` before adding any dependency, it may turn out that there is already
+- Please check `package.json` before adding any dependency, it may turn out that there is already
   what you need.
-* Please use [bundlephobia.com](https://bundlephobia.com/) when choosing a library.
+- Please use [bundlephobia.com](https://bundlephobia.com/) when choosing a library.
 
 ## How to run the project locally
 
@@ -18,12 +18,20 @@ First, you need to have Node.js installed, to do so we recommend installing and 
 [nvm](https://github.com/nvm-sh/nvm), to manage node.js versions per projects.
 
 Once in your local repo directory, use the command `nvm use`: it will install the node.js version
-specified in the .nvmrc file.
+specified in the .nvmrc file. Node version should be greater than or equal to 18
 
-Install all needed dependencies (use `npm install` when adding or
-upgrading dependencies, it will re-write `package-lock.json`)
+```
+npm install
+npm run dev
+```
 
-Finally, run `npm run dev` to run project locally on [localhost:5173](http://localhost:5173)
+The project will run on [localhost:5173](http://localhost:5173)
+
+To build the project, run the command
+
+```
+npm run build
+```
 
 ## Redux
 
@@ -49,7 +57,9 @@ You can find more details about tests writing:
 
 In the project directory, you can run:
 
-### `npm run test`
+```
+npm run test
+```
 
 Launches the test runner in the interactive watch mode.
 
