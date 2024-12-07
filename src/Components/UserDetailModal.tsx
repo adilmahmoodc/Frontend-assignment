@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Row, Col, Divider } from "antd";
 import InfoCard from "../Components/InfoCard";
-import './index.css';
+import "./index.css";
 
 interface DataType {
   key: React.Key;
@@ -21,11 +21,7 @@ interface ModalProps {
   modalData: DataType;
 }
 
-const UserDetailModal: React.FC<ModalProps> = ({
-  open,
-  onClose,
-  modalData,
-}) => {
+const UserDetailModal: React.FC<ModalProps> = ({ open, onClose, modalData }) => {
   return (
     <Modal
       title={<div className="user-detail-modal-header">User Details</div>}
@@ -60,16 +56,13 @@ const UserDetailModal: React.FC<ModalProps> = ({
             <InfoCard label="Company Name" value={modalData?.companyName} />
           </Col>
           <Col span={12}>
-            <InfoCard
-              label="Company Address"
-              value={modalData?.companyAddress}
-            />
+            <InfoCard label="Company Address" value={modalData?.companyAddress} />
           </Col>
         </Row>
         <Divider className="user-detail-divider" />
         <Row gutter={[16, 16]}>
           <Col span={12}>
-            <InfoCard label="Department" value={modalData?.departmentName} />
+            <InfoCard label="Company Department" value={modalData?.departmentName} />
           </Col>
           <Col span={12}>
             <InfoCard label="Company Title" value={modalData?.jobTitle} />

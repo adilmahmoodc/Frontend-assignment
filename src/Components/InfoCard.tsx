@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography } from "antd";
 
-
 interface InfoCard {
   label: string;
   value: string | undefined;

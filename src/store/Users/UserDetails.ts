@@ -1,6 +1,5 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
 interface UsersState {
   users: Record<string, any>;
@@ -14,22 +13,19 @@ const initialState: UsersState = {
   error: null,
 };
 
-export const getUser = createAsyncThunk('users/getUser', async () => {
-  const response = await axios.get('https://dummyjson.com/users');
+export const getUser = createAsyncThunk("users/getUser", async () => {
+  const response = await axios.get("https://dummyjson.com/users");
   return response.data;
 });
 
 // Thunk to search for a user
-export const searchUser = createAsyncThunk(
-  'users/searchUser',
-  async (query: string) => {
-      const response = await axios.get(`https://dummyjson.com/users/search?q=${query}`);
-      return response.data;
-  }
-);
+export const searchUser = createAsyncThunk("users/searchUser", async (query: string) => {
+  const response = await axios.get(`https://dummyjson.com/users/search?q=${query}`);
+  return response.data;
+});
 
 const usersSlice = createSlice({
-  name: 'users',
+  name: "users",
   initialState,
   reducers: {},
   extraReducers: (builder) => {

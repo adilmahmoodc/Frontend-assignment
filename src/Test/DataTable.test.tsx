@@ -14,10 +14,10 @@ window.matchMedia =
     };
   };
 
-  afterEach(() => {
-    jest.restoreAllMocks();
-    jest.clearAllMocks();
-  });
+afterEach(() => {
+  jest.restoreAllMocks();
+  jest.clearAllMocks();
+});
 
 describe("DataTable Component", () => {
   test("should render the DataTable with the correct columns", async () => {
