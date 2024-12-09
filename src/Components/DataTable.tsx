@@ -79,8 +79,8 @@ const DataTable: React.FC = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    if (users?.users?.length) {
-      const formattedData: DataType[] = users.users.map((user: User, index: number) => ({
+    if (users?.length) {
+      const formattedData: DataType[] = users.map((user: User, index: number) => ({
         key: index,
         firstName: user.firstName,
         lastName: user.lastName,
